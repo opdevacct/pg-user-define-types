@@ -5,5 +5,5 @@
 
 CREATE DOMAIN "USERNAME" AS VARCHAR(64)
 CONSTRAINT "valid" CHECK(
-    VALUE ~ '^[A-Za-z0-9_\.\-]+$'
+    VALUE ~ '^([A-Za-z0-9_\.\-]{1,64})$'
 );
